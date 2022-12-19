@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script
+>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#test1").text("Hi!");
+});
+$("#btn2").click(function(){
+$("#test2").html("<b>Changed</b>");
+});
+$("#btn3").click(function(){
+$("#test3").val("Goodbye");
+});
+});
+</script>
+</head>
+<body>
+<button id="btn1">Hello World!</button>
+<p id="test1">Magic1</p>
+<button id="btn2">This will change</button>
+<p id="test2">Magic2</p>
+<button id="btn3">Bye</button>
+<p>Input field: <input type="text" id="test3" value="Magic3"></p>
+</body>
+</html>
